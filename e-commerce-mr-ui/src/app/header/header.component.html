@@ -1,22 +1,34 @@
-<mat-toolbar color="primary">
-  <span>
+<mat-toolbar class="main-toolbar">
+  <span class="toolbar-title">  
     E-Commerce Application
   </span>
 
-  <span class="space-buttons"></span>
-  <button *ngIf="! isLoggedIn()" routerLink="/login" mat-raised-button color="primary">
+  <span class="toolbar-spacer"></span>
+
+  <button 
+    *ngIf="! isLoggedIn()" 
+    routerLink="/login" 
+    mat-raised-button 
+    class="login-button"
+  >
     Login
   </button>
-  <button *ngIf="isLoggedIn()" (click)="logout()" mat-raised-button color="warn">
+
+  <button 
+    *ngIf="isLoggedIn()" 
+    (click)="logout()" 
+    mat-raised-button 
+    class="logout-button"
+  >
     Logout
   </button>
 </mat-toolbar>
 
 <mat-toolbar color="primary" *ngIf="isLoggedIn()">
   <button mat-raised-button color="primary" routerLink="/">Home</button>
-  <button *ngIf="!isAdmin()" mat-raised-button color="primary" routerLink="/cart">Cart</button>
-  <button *ngIf="!isAdmin()" mat-raised-button color="primary" routerLink="/myOrders">My Orders</button>
-  <button *ngIf="isAdmin()" mat-raised-button color="primary" routerLink="/addNewProduct">Add New Product</button>
-  <button *ngIf="isAdmin()" mat-raised-button color="primary" routerLink="/showProductDetails">Show Product Details</button>
-  <button *ngIf="isAdmin()" mat-raised-button color="primary" routerLink="/orderInformation">Order Information</button>
+  <button *ngIf="!isAdmin()" mat-raised-button  routerLink="/cart">Cart</button>
+  <button *ngIf="!isAdmin()" mat-raised-button  routerLink="/myOrders">My Orders</button>
+  <button *ngIf="isAdmin()" mat-raised-button  routerLink="/addNewProduct">Add New Product</button>
+  <button *ngIf="isAdmin()" mat-raised-button  routerLink="/showProductDetails">Show Product Details</button>
+  <button *ngIf="isAdmin()" mat-raised-button  routerLink="/orderInformation">Order Information</button>
 </mat-toolbar>
