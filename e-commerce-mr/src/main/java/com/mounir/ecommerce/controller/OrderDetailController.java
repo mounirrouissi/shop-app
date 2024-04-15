@@ -19,6 +19,8 @@ public class OrderDetailController {
     @PostMapping({"/placeOrder/{isSingleProductCheckout}"})
     public void placeOrder(@PathVariable(name = "isSingleProductCheckout") boolean isSingleProductCheckout,
             @RequestBody OrderInput orderInput) {
+        System.out.println("isSingleProductCheckout: " + isSingleProductCheckout);
+        System.out.println("orderInput: " + orderInput);
         orderDetailService.placeOrder(orderInput, isSingleProductCheckout);
     }
 

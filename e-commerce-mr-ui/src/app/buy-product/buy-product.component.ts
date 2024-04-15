@@ -46,6 +46,7 @@ export class BuyProductComponent implements OnInit {
   }
 
   public placeOrder(orderForm: NgForm) {
+    console.log( "Place Order " + orderForm)
     this.productService.placeOrder(this.orderDetails, this.isSingleProductCheckout).subscribe(
       (resp) => {
         console.log(resp);
