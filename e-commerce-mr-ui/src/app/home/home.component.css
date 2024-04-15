@@ -5,7 +5,7 @@ mat-grid-tile {
 
 .image-container {
     position: relative;
-    height: 300px;
+    height: 150px;
 }
 
 .home-page-product-image {
@@ -17,4 +17,53 @@ mat-grid-tile {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.products-container {
+  padding: 16px;
+}
+
+.search-field {
+  width: 100%;
+}
+
+.products-grid {
+  margin-top: 16px;
+}
+
+.product-item {
+  padding: 16px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+} 
+
+.product-image img {
+  max-width: 100%;
+}
+
+.view-details-button {
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+/* Misc styles */
+
+.load-more-button {
+  margin: 16px auto;
+  display: block; 
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
