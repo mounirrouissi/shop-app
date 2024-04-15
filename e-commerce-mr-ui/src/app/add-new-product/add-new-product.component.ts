@@ -6,6 +6,7 @@ import { ActivatedRoute } from "@angular/router";
 import { FileHandle } from "../_model/file-handle.model";
 import { Product } from "../_model/product.model";
 import { ProductService } from "../_services/product.service";
+import { Location } from "@angular/common";
 
 @Component({
   selector: "app-add-new-product",
@@ -27,7 +28,8 @@ export class AddNewProductComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private sanitizer: DomSanitizer,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private location: Location
   ) {}
 
   ngOnInit(): void {
@@ -49,6 +51,8 @@ export class AddNewProductComponent implements OnInit {
         console.log(error);
       }
     );
+    this.location.back();
+
   }
 
   prepareFormDataForProduct(product: Product): FormData {

@@ -50,6 +50,7 @@ public class ProductService {
     }
 
     public void deleteProductDetails(Integer productId) {
+        System.out.println("deleting product with id: " + productId);
         productDao.deleteById(productId);
     }
 

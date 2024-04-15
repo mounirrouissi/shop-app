@@ -1,6 +1,10 @@
 <mat-toolbar class="main-toolbar">
   <span class="toolbar-title">  
-    E-Commerce Application
+    E-Commerce Application 
+    <span>
+      {{ isAdmin() ? '(Admin)' : '' }} 
+    </span>
+    
   </span>
 
   <span class="toolbar-spacer"></span>

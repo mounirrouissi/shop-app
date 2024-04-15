@@ -32,7 +32,9 @@ export class UserAuthService {
 
   public isAdmin() {
     const roles: any[] = this.getRoles();
+    if (roles)
     return roles[0].roleName === 'Admin';
+   return false;
   }
 
   public isUser() {
