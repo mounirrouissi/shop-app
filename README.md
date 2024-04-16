@@ -4,7 +4,10 @@ This project is a comprehensive eCommerce application built with Spring Boot for
 
 ## DEMO
 
-https://github.com/mounirrouissi/shop-app/assets/14219671/b016090f-74fc-4efe-858f-0808b16e7ab4
+
+
+https://github.com/mounirrouissi/shop-app/assets/14219671/bc71d84b-cf36-4f8b-af0d-35e20b434991
+
 
 
 
