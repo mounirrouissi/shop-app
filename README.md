@@ -15,8 +15,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - Java 11 or higher
-- Node.js and npm (for Angular)
-- Angular CLI
+- Node.js and npm (for Angular) node 16.14.2
+- Angular CLI(10)
 - A code editor (e.g., Visual Studio Code)
 
 ### Installation
